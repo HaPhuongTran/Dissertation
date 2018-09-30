@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<input type="button" value="get data" id="btnGetData" name="">
+
+</body>
+<script>
+	
+	var listcountry;
+	$("#btnGetData").click(function(){
+		$.ajax({
+			async : false,
+			method: "GET",
+			url: "https://restcountries.eu/rest/v1/alpha?codes=vn"
+		}).done(function(data){
+			listcountry = data;
+		});
+
+		console.log(listcountry[0].name);
+	})
+</script>
+</html>
