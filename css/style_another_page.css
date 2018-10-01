@@ -1,5 +1,5 @@
 body{
-	background-color: rgba(198,197,184, 0.1);
+	/*background-color: rgba(198,197,184, 0.1);*/
 }
 .nav_bar{
 	width: 100%;
@@ -107,6 +107,6 @@ body{
 	font-size: 18px; 
 	bottom: 50px; 
 	right: 50px; 
-	border-radius: 200px;
+	border-radius: 300px;
 	font-size: 30px;
 }
