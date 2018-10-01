@@ -3,9 +3,9 @@ $(document).ready(function(){
 	var dataHome;
 	var status_create;
 	var loadRoom = 0;
-	// var count = loadRoom;
 	var dataRoomGet;
 	var listRoom;
+	var nameRoom
 	$.ajax({
 			async : false,
 			method: "get",
@@ -38,8 +38,8 @@ $(document).ready(function(){
 
 	function save(saveCount){
 		  	$("#btn-save"+saveCount).click(function(){
-  			var nameRoom = $("#name_input"+$(this).attr("id").substr(-1)).val();
-  			var idRoom = parseInt($("#id_input"+$(this).attr("id").substr(-1)).val());
+  			nameRoom = $("#name_input"+ saveCount).val();
+  			var idRoom = parseInt($("#id_input"+ saveCount).val());
   			if(isNaN(idRoom)|| idRoom == null){
   				idRoom = 0;
   			}
