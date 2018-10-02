@@ -15,12 +15,11 @@
   <script type="text/javascript" src="js/cr_room.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/style_another_page.css">
-
   <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
 </head>
-<body>
+<body style='background-color: #EDEDED;'>
   <nav class="navbar navbar-expand-sm nav_bar">
       <a class="navbar-brand nav_bar_logo" href="#">Smart Home</a>
       <ul class="navbar-nav nav_bar_list">
@@ -37,10 +36,41 @@
           <a class="nav-link nav_bar_text" href="#">Contact</a>
         </li>
       </ul>
-    </nav>
+  </nav>
     <div class="container">
       <div class="row"></div>
     </div>
-    <button type="button" class="btn btn-info btn-circle button-add" title="+" style="border-radius: 100px;">+</button>
+    <div class="container furniture_room">
+      <h2 class="title_room"></h2>
+      <hr>
+      <div class="form-group table_decive">
+        <table>
+          <tr>
+            <td>
+              <label>Name Room</label>
+              <input type="text" class="form-control" id="name_room" >
+            </td>
+            <td>
+              <label>Name Home</label>
+              <input type="text" class="form-control" id="name_home">
+            </td>
+            <td>
+              <label>Number decive</label>
+              <input type="text" class="form-control" id="number_decive">
+            </td>
+          </tr>
+        </table>
+      </div>
+     <!--  <button class="btn btn-primary create-btn"> Create </button>-->
+      <button type="button" class="btn btn-primary close_button"> Cancel </button>
+      <button type="button" class="btn btn-primary add_button"> add </button> 
+    </div>
+    <div class="container choose_decive">
+      <input type="radio" name="">
+      <!-- //begin tomorrow in there -->
+      
+    </div>
+
+    <button type="button" class="btn btn-info btn-circle button-add" title="+" style="border-radius: 100px;">Add</button>
 </body>
 </html>

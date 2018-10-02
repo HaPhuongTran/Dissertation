@@ -1,12 +1,10 @@
-body{
-	/*background-color: rgba(198,197,184, 0.1);*/
-}
+
 .nav_bar{
 	width: 100%;
 	position: fixed;
 	top: 0px;
 	z-index: 2; 
-	background-color: rgba(17,204, 170, 0.5);
+	background-color:  #00CED1;
 	height: 120px;
 }
 .nav_bar_text{ 
@@ -108,5 +106,33 @@ body{
 	bottom: 50px; 
 	right: 50px; 
 	border-radius: 300px;
-	font-size: 30px;
+}
+
+.furniture_room{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index:3;
+  width: 80%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #00CED1;
+  border-radius: 10px;
+}
+
+.furniture_room h2{
+  text-align: center;
+}
+
+.table_decive td{
+  padding: 1% 10% 0% 0%;
+}
+.close_button{
+  margin-left: 80%;
+}
+
+.close_button, .add_button{
+  margin-top: 50px;
 }

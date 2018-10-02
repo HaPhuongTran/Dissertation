@@ -1,0 +1,16 @@
+
+.contain_form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index:3;
+	width: 30%;
+	margin: auto;
+	background-color: white;
+	padding: 20px;
+}
+
+.contain_form h2{
+	text-align: center;
+}
